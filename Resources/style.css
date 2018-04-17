@@ -9,47 +9,145 @@ body {
 
 /* Header Section */
 
-.header {
+header {
+  position: fixed;
   display: flex;
+  flex-direction: row;
+  top: 0;
+  width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
+  background-color: black;
 }
 
 .logo {
   display: flex;
-  height: 50px;
-  margin-left: 10px;
+  width: 20%;
+  justify-content:flex-start;
 }
 
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  margin-right: 10px;
+}
+
+span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+span a {
+  color: seashell;
+  font-family: Helvetica;
+  font-size: 22px;
+}
 
 /* Main Body Attributes */
 .text-content{
   display: flex;
+  text-align: center;
+  flex-direction:column;
 }
 
 /* Mission */
+
 .mission-container {
+  padding-top: 62px;
   display: flex;
-  height: 700px;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.mission-statement-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: black;
+  width: 100%;
 }
 
 .mission-statement {
   display: flex;
-  align-content: center;
+  flex-direction: column;
 }
 
+.mission-statement h2 {
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.mission-statement h4 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+
 .img-mission-background {
+  height: 700px;
+  width: 1200px;
+  background-image: url("img-mission-background.jpg");
   display: flex;
-  background-image: img-mission-backround.jpg;
+  margin-top: auto;
+  justify-content: center;
 }
 
 
 /* Tea of the Month */
 .tea-container{
   display: flex;
-  width: 1000px;
+  flex-direction: column;
+  width: 100%;
   justify-content: center;
+  align-self: center;
 }
+.text-content h2 {
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.text-content h4 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  width: 80%
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  width: 53%
+}
+
+.img-container .one .two .three .four .five {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
 .tea-month {
   display: flex;
   width: 300px;
@@ -58,29 +156,86 @@ body {
 .text-content .tea {
   display: flex;
   text-align:center;
+  margin-top:10px;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20;
 }
 
 /* Locations */
-.location-container {
+
+.location-container{
   display: flex;
-  width: 1200px;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  margin-top: 40px;
 }
-.location-box {
+
+.img-locations-background {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  height: 500px;
+  width: 1200px;
+  background-image: url("img-locations-background.jpg");
+}
+
+.locations-title {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.locations-box {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+.location-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
   width: 300px;
   height: 300px;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 15px;
   opacity: 1;
   background-color: black;
 }
 
+
 /* Footer */
-.info {
+
+footer {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 200px;
+  width: 100%;
+  margin-top: 20px;
 }
-.copyright {
+
+.info h2 {
+  display: flex;
+  justify-content: center;
+}
+.copyright h5 {
   display: flex;
   text-align: left;
-  height: 20px;
+  margin-left: 20px;
 }

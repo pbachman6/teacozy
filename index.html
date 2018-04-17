@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="Resources/style.css">
     <title>Tea Cozy</title>
   </head>
   <body>
 
   <!-- Header Section -->
   <header>
-    <div class="header">
-      <img class="logo"src="img-tea-cozy-logo.png">
+    <div class="logo">
+      <img src="Resources/img-tea-cozy-logo.png">
     </div>
     <nav>
       <span> <a href="mission-container"> Mission </a></span>
@@ -23,9 +24,11 @@
       <!-- Mission -->
       <div class="mission-container">
         <div class="img-mission-background">
-          <div class="text-content mission-statement">
-            <h2>Our Mission</h2>
-            <h4>Handpicked, Artisnally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+          <div class="mission-statement-container">
+            <div class="mission-statement">
+              <h2>Our Mission</h2>
+              <h4> Handpicked, Artisinally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -34,42 +37,62 @@
       <div class="tea-container">
         <div class="text-content">
           <h2>Tea of the Month</h2>
-          <h6>What's Steeping at the Tea Cozy?</h6>
+          <h4>What's Steeping at the Tea Cozy?</h4>
         </div>
-        <img class="tea-month" src="img-berryblitz.jpg" alt="Tea cup with berries floating"/>
-        <p class="text-content tea">Fall Berry Blizt Tea</p>
-        <img class="tea-month" src="img-spiced-rum.jpg" alt="Spiced rum tea carton"/>
-        <p class="text-content tea">Spiced Rum Tea</p>
-        <img class="tea-month" src="img-donut.jpg" alt="Donut on plate"/>
-        <p class="text-content tea">Seasonal Doughnuts</p>
-        <img class="tea-month" src="img-myrtle-ave.jpg" alt="Donut on plate"/>
-        <p class="text-content tea">Myrtle Ave Tea</p>
-        <img class="tea-month" src="img-bedford-bizarre.jpg" alt="Tea cup"/>
-        <p class="text-content tea">Bedford Bizarre Tea</p>
+        <div class="first-row">
+          <div class="img-container one">
+            <img class="tea-month" src="Resources/img-berryblitz.jpg" alt="Tea cup with berries floating"/>
+            <p class="text-content tea">Fall Berry Blizt Tea</p>
+          </div>
+          <div class="img-container two">
+            <img class="tea-month" src="Resources/img-spiced-rum.jpg" alt="Spiced rum tea carton"/>
+            <p class="text-content tea">Spiced Rum Tea</p>
+          </div>
+          <div class="img-container three">
+            <img class="tea-month" src="Resources/img-donut.jpg" alt="Donut on plate"/>
+            <p class="text-content tea">Seasonal Doughnuts</p>
+          </div>
+        </div>
+        <div class="second-row">
+          <div class="img-container four">
+            <img class="tea-month" src="Resources/img-myrtle-ave.jpg" alt="Donut on plate"/>
+            <p class="text-content tea">Myrtle Ave Tea</p>
+          </div>
+          <div class="img-container five">
+            <img class="tea-month" src="Resources/img-bedford-bizarre.jpg" alt="Tea cup"/>
+            <p class="text-content tea">Bedford Bizarre Tea</p>
+          </div>
+        </div>
       </div>
 
       <!-- Locations -->
-      <div class="location-container img-content-background">
-        <h2>Locations</h2>
-        <div class="location">
-          <h3>Downtown</h3>
-          <p>384 West 4th St</p>
-          <p>Suite 108</p>
-          <p>Portland, Maine</p>
+      <div class="location-container">
+        <div class="img-locations-background">
+            <div class="locations-title">
+              <h2>Locations</h2>
+            </div>
+            <div class="locations-box">
+              <div class="location-items">
+                <h3>Downtown</h3>
+                <p>384 West 4th St</p>
+                <p>Suite 108</p>
+                <p>Portland, Maine</p>
+              </div>
+              <div class="location-items">
+                <h3>East Bayside</h3>
+                <p>3433 Phisherman's Ave</p>
+                <p>(Northwest Corner)</p>
+                <p>Portland, Maine</p>
+              </div>
+              <div class="location-items">
+                <h3>Downtown</h3>
+                <p>515 Crescent Avenue</p>
+                <p>Second Floor</p>
+                <p>Portland, Maine</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="location">
-          <h3>East Bayside</h3>
-          <p>3433 Phisherman's Ave</p>
-          <p>(Northwest Corner)</p>
-          <p>Portland, Maine</p>
-        </div>
-        <div class="location-box">
-          <h3>Downtown</h3>
-          <p>515 Crescent Avenue</p>
-          <p>Second Floor</p>
-          <p>Portland, Maine</p>
-        </div>
-      </div>
 
     <!-- Footer -->
       <footer>
@@ -79,7 +102,7 @@
           <h5>917-555-8904</h5>
         </div>
         <div class="copyright">
-          copyright The Tea Cozy 2017
+          <h5>copyright The Tea Cozy 2017</h5>
         </div>
       </footer>
 
